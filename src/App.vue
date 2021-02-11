@@ -1,26 +1,23 @@
 <template>
-  <div id="app">
-    <HelloWorld />
-    <SideBar />
-  </div>
+  <v-app>
+    <v-main>
+      <HelloWorld/>
+    </v-main>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import SideBar from './components/SideBar.vue'
+import HelloWorld from './components/HelloWorld';
 
 export default {
-  name: 'app',
+  name: 'App',
+
   components: {
     HelloWorld,
-    SideBar
-  }
-}
-</script>
+  },
 
-<style>
-#app {
-  display: flex;
-  flex-direction: column;
-}
-</style>
+  data: () => ({
+    //
+  }),
+};
+</script>

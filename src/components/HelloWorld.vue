@@ -22,16 +22,20 @@
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
+    <SideBar />
   </div>
 </template>
 
 <script>
-
+import SideBar from './SideBar';
 export default {
   name: '',
   props: {
     msg: String
-  }
+  },
+  components: {
+    SideBar,
+  },
 }
 </script>
 
