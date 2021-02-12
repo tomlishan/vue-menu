@@ -22,19 +22,21 @@
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
-    <SideBar />
+   
+    <SideBarVuetify />
   </div>
 </template>
 
 <script>
-import SideBar from './SideBar';
+
+import SideBarVuetify from './SideBarVuetify';
 export default {
   name: '',
   props: {
     msg: String
   },
   components: {
-    SideBar,
+    SideBarVuetify
   },
 }
 </script>
