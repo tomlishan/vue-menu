@@ -1,6 +1,6 @@
 <template>
   <v-sheet
-    height="800"
+    height="600"
     class="overflow-hidden"
     style="position: relative;"
   >
@@ -9,6 +9,7 @@
         align="center"
         justify="center"
       >
+      <!--
         <v-btn
           color="pink"
           dark
@@ -16,26 +17,16 @@
         >
           Toggle
         </v-btn>
+        -->
       </v-row>
     </v-container>
 
     <v-navigation-drawer
       v-model="drawer"
       absolute
-      temporary
       dark 
       color="#000000"   
     >
-      <v-list-item>
-        <v-list-item-avatar>
-          <v-img src="https://randomuser.me/api/portraits/men/78.jpg"></v-img>
-        </v-list-item-avatar>
-
-        <v-list-item-content>
-          <v-list-item-title>John Leider</v-list-item-title>
-        </v-list-item-content>
-      </v-list-item>
-
       <v-divider></v-divider>
 
       <v-list dense>
@@ -54,7 +45,7 @@
         </v-list-item>
       </v-list>
 
-              <v-list-group
+        <v-list-group
           :value="true"
           no-action
           sub-group
@@ -79,6 +70,15 @@
         </v-list-group>
 
 
+        <template v-slot:append>
+          <div class="pa-2">
+            <v-btn block color="#abcdef">
+              Logout
+            </v-btn>
+          </div>
+        </template>
+
+
     </v-navigation-drawer>
   </v-sheet>
 </template>
@@ -87,7 +87,7 @@
   export default {
     data () {
       return {
-        drawer: null,
+        drawer: true,
         items: [
           { title: 'Home', icon: 'mdi-view-dashboard' },
           { title: 'About', icon: 'mdi-forum' },
