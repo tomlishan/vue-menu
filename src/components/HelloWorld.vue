@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div style="background-color:#F5F5F5;">
 
     
-    <b-navbar toggleable="lg" >
+    <b-navbar toggleable="lg" variant="light">
       <b-navbar-brand href="#" class="col-md-1" >
           <b-img     
             height="40vh"
@@ -39,7 +39,7 @@
     </b-navbar>
 
    <SideBarVuetify />
-     
+
   </div>
 </template>
 
@@ -57,8 +57,7 @@ export default {
   components: {
     SideBarVuetify
   },
-  methods: {
-  }
+
 }
 </script>
 

@@ -1,29 +1,34 @@
 <template>
   <v-sheet
     height="89vh"
-    width="118vw"
+    width="117vw"
     class="overflow-hidden"
     style="position: relative;"
   >
-    <v-container class="fill-height grey lighten-3 mb-12"
->
-      <v-row
-        align="center"
-        justify="center"
-        
-      >
-      <!--
-        <v-btn
-          color="pink"
-          dark
-          @click.stop="drawer = !drawer"
+          <v-row
+          align="end"
+          no-gutters
+          style="height:170vh;"
         >
-          Toggle
-        </v-btn>
-        -->
-      </v-row>
-    </v-container>
+    <v-container 
+    class="fill-height  lighten-3 mb-12"
+>
+      <v-footer 
+      padless 
+      width="100vw"
+      color="#C0C0C0"
+      >
+    <v-col
+      class="text-center"
+      cols="12"
+    >
+      {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
+    </v-col>
+    
+  </v-footer>
 
+    </v-container>
+</v-row>
     <v-navigation-drawer
       v-model="drawer"
       absolute
@@ -84,6 +89,7 @@
 
     </v-navigation-drawer>
   </v-sheet>
+  
 </template>
 
 <script>
