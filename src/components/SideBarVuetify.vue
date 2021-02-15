@@ -1,13 +1,16 @@
 <template>
   <v-sheet
-    height="600"
+    height="89vh"
+    width="118vw"
     class="overflow-hidden"
     style="position: relative;"
   >
-    <v-container class="fill-height">
+    <v-container class="fill-height grey lighten-3 mb-12"
+>
       <v-row
         align="center"
         justify="center"
+        
       >
       <!--
         <v-btn

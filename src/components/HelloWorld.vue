@@ -1,8 +1,17 @@
 <template>
   <div>
-    <b-navbar toggleable="lg" type="dark" variant="info">
-      <b-navbar-brand href="#">中x人壽</b-navbar-brand>
-      <b-navbar-brand href="#">iAgent</b-navbar-brand>
+
+    
+    <b-navbar toggleable="lg" >
+      <b-navbar-brand href="#" class="col-md-1" >
+          <b-img     
+            height="40vh"
+            width="70vw"
+            :src="require('../assets/chinalifelogo.png')" />
+
+          </b-navbar-brand>
+
+      <b-navbar-brand href="#" class="col-md-1">iAgent</b-navbar-brand>
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
       <b-collapse id="nav-collapse" is-nav>
@@ -14,12 +23,12 @@
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto">
 
-       <v-list-item> 
+       <v-list-item class="grey lighten-3">  
         <v-list-item-avatar>
           <v-img src="https://randomuser.me/api/portraits/men/78.jpg"></v-img>
         </v-list-item-avatar>
 
-        <v-list-item-content >
+        <v-list-item-content>
           <v-list-item-title >hi abc</v-list-item-title>
           <v-list-item-subtitle>業務主任</v-list-item-subtitle>
         </v-list-item-content>
@@ -28,8 +37,9 @@
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
-   
-    <SideBarVuetify />
+
+   <SideBarVuetify />
+     
   </div>
 </template>
 
